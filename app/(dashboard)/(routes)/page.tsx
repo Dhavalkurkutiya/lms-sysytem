@@ -1,10 +1,11 @@
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
+import { UserButton } from '@clerk/nextjs'
 
 export default function Home() {
   return (
   <div>
-    This protected page
+    <UserButton afterSignOutUrl='/' />
   </div>
   ) 
 }
